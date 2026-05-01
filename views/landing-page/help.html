@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help Center - EduLibrary</title>
+    <link rel="stylesheet" href="../../css/help.css" />
+    <script src="../../js/help.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="help-header fade-in">
+      <h1>Help Center</h1>
+      <p>Your guide to using EduLibrary effectively</p>
+    </header>
+
+    <!-- Search Bar -->
+    <section class="help-search fade-in">
+      <input type="text" id="search" placeholder="Search help topics..." />
+    </section>
+
+    <!-- Help Topics -->
+    <main class="help-container fade-in">
+      <div class="accordion">
+        <button class="accordion-btn">
+          <i class="fas fa-book"></i> Getting Started
+        </button>
+        <div class="accordion-content">
+          <ul>
+            <li><a href="login-guide.html">How to login</a></li>
+            <li><a href="search-guide.html">How to search for books</a></li>
+            <li>
+              <a href="borrow-return-guide.html"
+                >Borrowing and returning books</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-btn">
+          <i class="fas fa-user"></i> Account & Profile
+        </button>
+        <div class="accordion-content">
+          <ul>
+            <li><a href="reset-password-guide.html">Reset Password</a></li>
+            <li>
+              <a href="manage-borrowed-guide.html">Manage Borrowed Books</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-btn">
+          <i class="fas fa-sync-alt"></i> Borrowing & Renewals
+        </button>
+        <div class="accordion-content">
+          <ul>
+            <li><a href="manage-borrowed-guide.html">Borrowing policies</a></li>
+            <li><a href="manage-borrowed-guide.html">How to renew books</a></li>
+            <li>
+              <a href="manage-borrowed-guide.html">Late fees and penalties</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- Quick Links -->
+    <section class="quick-links fade-in">
+      <a href="./faq.html" class="link-btn"
+        ><i class="fas fa-question-circle"></i> Visit FAQs</a
+      >
+      <a href="./index.html" class="link-btn"
+        ><i class="fas fa-home"></i> Back to Home</a
+      >
+    </section>
+
+    <!-- Contact -->
+    <footer class="help-footer fade-in">
+      <p>
+        Need more assistance? Email us at
+        <a href="mailto:library@college.edu">library@college.edu</a> or call
+        <a href="tel:+15551234567">+1 (555) 123-4567</a>
+      </p>
+    </footer>
+  </body>
+</html>

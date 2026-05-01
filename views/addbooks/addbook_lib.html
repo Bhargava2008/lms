@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Book - EduLibrary</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/addbook_lib.css" />
+    <script src="../../js/addbook_lib.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">📚 EduLibrary</div>
+      <!-- Back link -->
+      <a
+        href="/librarian-dashboard/librarian-dashboard.html?view=manageBooks"
+        class="back-btn"
+        >← Back to Dashboard</a
+      >
+    </div>
+
+    <div class="form-container">
+      <h1 class="page-title">Add New Book</h1>
+      <p class="page-description">
+        Fill in the details below to add a new book to the library collection.
+      </p>
+
+      <form id="addBookForm">
+        <div class="form-group">
+          <label for="bookName">Book Name</label>
+          <input
+            type="text"
+            id="bookName"
+            name="bookName"
+            required
+            placeholder="Enter book title"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="authorName">Author Name</label>
+          <input
+            type="text"
+            id="authorName"
+            name="authorName"
+            required
+            placeholder="Enter author name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="isbn">ISBN/Book ID</label>
+          <input
+            type="text"
+            id="isbn"
+            name="isbn"
+            required
+            placeholder="Enter ISBN or book ID"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="department">Department</label>
+          <select id="department" name="department" required>
+            <option value="">Select Department</option>
+            <option value="CSE">Computer Science and Engineering (CSE)</option>
+            <option value="AI&ML">
+              Artificial Intelligence & Machine Learning (AI&ML)
+            </option>
+            <option value="CYBER SECURITY">Cyber Security</option>
+            <option value="ECE">
+              Electronics and Communication Engineering (ECE)
+            </option>
+            <option value="EEE">
+              Electrical and Electronics Engineering (EEE)
+            </option>
+            <option value="CIVIL">Civil Engineering</option>
+          </select>
+        </div>
+
+        <div class="form-actions">
+          <!-- Cancel as <a> -->
+          <a
+            href="/librarian-dashboard/librarian-dashboard.html?view=manageBooks"
+            class="btn btn-secondary"
+            >Cancel</a
+          >
+          <button id="addbook" type="submit" class="btn btn-primary">
+            Add Book
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

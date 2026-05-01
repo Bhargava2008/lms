@@ -1,0 +1,161 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background: #f9fcff;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+/* Header */
+.help-header {
+    text-align: center;
+    background: #2563eb;
+    color: #fff;
+    padding: 3rem 1rem;
+}
+
+.help-header h1 {
+    font-size: 3rem;
+}
+
+.help-header p {
+    font-size: 1.6rem;
+    color: #e2e8f0;
+}
+
+/* Search Bar */
+.help-search {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+#search {
+    width: 80%;
+    max-width: 40rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+#search:focus {
+    border-color: #2563eb;
+}
+
+/* Accordion */
+.help-container {
+    max-width: 80rem;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.accordion {
+    margin-bottom: 1rem;
+}
+
+.accordion-btn {
+    width: 100%;
+    background: #2563eb;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 0.6rem;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.accordion-btn:hover {
+    background: #1d4ed8;
+}
+
+.accordion-btn i {
+    margin-right: 0.8rem;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: #fff;
+    border-radius: 0 0 0.6rem 0.6rem;
+    padding: 0 1rem;
+}
+
+.accordion-content ul {
+    padding: 1rem;
+    font-size: 1.6rem;
+    list-style: disc inside;
+}
+
+/* Quick Links */
+.quick-links {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.link-btn {
+    display: inline-block;
+    background: #2563eb;
+    color: #fff;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    border-radius: 0.6rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: 0.3s;
+}
+
+.link-btn:hover {
+    background: #1d4ed8;
+}
+
+/* Footer */
+.help-footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.4rem;
+    color: #475569;
+}
+
+.help-footer a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.help-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #search {
+        width: 90%;
+    }
+
+    .accordion-btn {
+        font-size: 1.6rem;
+    }
+}

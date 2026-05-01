@@ -1,0 +1,111 @@
+20250916	12:16:37	6e8fecb7-bff8-4e64-9b88-e24c79b41935	Error: Not allowed by CORS
+20250916	12:19:44	eefac5cb-ef27-4cc1-ac63-996296e96aae	Error: Not allowed by CORS
+20250916	12:19:46	7caa6d1d-e82f-47b2-bc7e-09e9d83bacf4	Error: Not allowed by CORS
+20250916	12:19:47	c81f3d6f-9fff-419d-98a4-0cccaae64825	Error: Not allowed by CORS
+20250916	12:19:47	a3a84593-f4b2-499d-a95c-4351f4b424bd	Error: Not allowed by CORS
+20250916	12:19:47	2e9a4ff0-782a-4b88-89d9-5eba0776627f	Error: Not allowed by CORS
+20250916	13:58:31	e1e60edd-4e23-4d49-b994-5aa3d5a7d19d	Error: Not allowed by CORS
+20250918	10:38:39	aa7748fd-3004-4d8d-906f-92f55714c12c	SyntaxError: Expected ',' or '}' after property value in JSON at position 15 (line 3 column 3)
+20250918	11:49:05	5eab7395-8983-4380-b8af-4495ea510625	Error: ENOENT: no such file or directory, stat 'C:\Users\vakka\Documents\LMS-official\views\librarian-dashboard\librarian-dashboard.html'
+20250918	11:49:35	b3bfcda9-4d3c-48d8-bdde-efa4d3f680e0	Error: ENOENT: no such file or directory, stat 'C:\Users\vakka\Documents\LMS-official\views\librarian-dashboard\librarian-dashboard.html'
+20250918	11:50:52	f02f1836-54a7-4664-8948-bae5c669498a	Error: ENOENT: no such file or directory, stat 'C:\Users\vakka\Documents\LMS-official\views\librarian-dashboard\librarian-dashboard.html'
+20250918	11:51:29	6ad8ec30-e54d-405f-908a-9a0588d48caa	Error: ENOENT: no such file or directory, stat 'C:\Users\vakka\Documents\LMS-official\views\Librarian-dashboard\librarian-dashboard.html'
+20250918	11:51:35	4477eeba-17f1-4eba-a00e-4d0332cd99c0	Error: ENOENT: no such file or directory, stat 'C:\Users\vakka\Documents\LMS-official\views\Librarian-dashboard\librarian-dashboard.html'
+20250918	11:51:42	b91087b0-aee2-4d2f-b632-0f7d665d786b	Error: ENOENT: no such file or directory, stat 'C:\Users\vakka\Documents\LMS-official\views\Librarian-dashboard\librarian-dashboard.html'
+20250918	11:52:07	9e62a799-2f6b-477f-8ef4-615b6b14521c	Error: ENOENT: no such file or directory, stat 'C:\Users\vakka\Documents\LMS-official\views\Librarian-dashboard\librarian-dashboard.html'
+20250918	11:52:41	f5391cc2-6c0e-48f0-afc0-d514f852f1b7	Error: ENOENT: no such file or directory, stat 'C:\Users\vakka\Documents\LMS-official\views\librarian-dashboard\librarian-dashboard.html'
+20250918	11:54:15	18f0d2c6-7dfb-4a7a-911a-f916e2ac1b5a	Error: ENOENT: no such file or directory, stat 'C:\Users\vakka\Documents\LMS-official\views\Librarian-dashboard\librarian-dashboard.html'
+20250918	11:54:16	a80f4d1a-9467-4e43-a415-3d666520148f	Error: ENOENT: no such file or directory, stat 'C:\Users\vakka\Documents\LMS-official\views\Librarian-dashboard\librarian-dashboard.html'
+20250918	11:54:16	2fc61f03-298e-49e4-bac0-442950427444	Error: ENOENT: no such file or directory, stat 'C:\Users\vakka\Documents\LMS-official\views\Librarian-dashboard\librarian-dashboard.html'
+20250918	11:54:16	be031413-315a-4d45-9149-72dc4ef7621e	Error: ENOENT: no such file or directory, stat 'C:\Users\vakka\Documents\LMS-official\views\Librarian-dashboard\librarian-dashboard.html'
+20250919	10:48:09	a7e1f759-9669-441a-bc19-e144019949cc	SyntaxError: Expected ',' or ']' after array element in JSON at position 95 (line 1 column 96)
+20250919	10:51:46	dfe340f5-ee51-4b8a-a16a-c5101f850e6d	SyntaxError: Unexpected token 'w', ..."username":walt1,
+  ""... is not valid JSON
+20250919	10:52:08	2ee26c9a-3021-4b45-ae9b-2004242f3284	SyntaxError: Unexpected token ''', ..."username":'walt1',
+ "... is not valid JSON
+20250922	15:08:14	7d882f91-4f63-4f31-8b5f-8923ad4041c7	ReferenceError: jwt is not defined
+20250922	15:09:01	64f41a6d-0d46-4ff0-bad3-6a96f791a0bb	ReferenceError: jwt is not defined
+20250922	15:11:35	4f084109-32e8-4515-87a0-8e1e69ff7f72	Error: secretOrPrivateKey must have a value
+20250922	15:12:33	51eb5491-c791-4d03-b611-976266447129	Error: secretOrPrivateKey must have a value
+20250922	15:14:43	49592e33-9741-4c1a-b292-7cd2d086a7fc	Error: secretOrPrivateKey must have a value
+20250922	15:16:39	272c2f8d-4fcc-469c-9d8a-7cce4220d186	Error: secretOrPrivateKey must have a value
+20250922	15:23:54	f0c40cb5-4cea-4098-9bc1-11361dd1c8e9	Error: secretOrPrivateKey must have a value
+20250922	15:25:07	e6f66ffc-be98-4386-a513-8f68e35fdce1	Error: secretOrPrivateKey must have a value
+20250922	15:27:45	5fc20391-64af-4f73-a10f-b19dc3f04145	ReferenceError: fsPromises is not defined
+20250922	15:29:01	39cfbe4f-e782-442d-828a-e3e336fac61c	ReferenceError: path is not defined
+20250923	07:01:10	fb464379-2ff2-454f-b64f-5e1a022bd9f9	TypeError: res.sendtStatus is not a function
+20250923	08:02:55	2d67503e-f743-42ef-a99b-dcf552831dd6	Error: ENOENT: no such file or directory, stat 'C:\Users\vakka\Documents\LMS-official\views\librarian-dashboard\librarian-dashboard.html'
+20250923	08:03:14	ab344aed-d451-4f44-ab56-419d7cb4a900	Error: ENOENT: no such file or directory, stat 'C:\Users\vakka\Documents\LMS-official\views\librarian-dashboard\librarian-dashboard.html'
+20250923	08:03:15	c2ea9601-c0fc-4a2d-a1ca-9efc3e896dd9	Error: ENOENT: no such file or directory, stat 'C:\Users\vakka\Documents\LMS-official\views\librarian-dashboard\librarian-dashboard.html'
+20250924	22:02:16	571a0093-098f-4eeb-a0e1-aa9a827ef818	SyntaxError: Expected ',' or '}' after property value in JSON at position 66 (line 4 column 5)
+20250925	00:30:09	086cefa0-e6e9-48b4-aaf9-2f45b8d34cec	TypeError: Cannot read properties of undefined (reading 'roles')
+20250925	00:31:56	e7fd3909-5307-476c-ad10-22c01f023586	TypeError: Cannot read properties of undefined (reading 'roles')
+20250926	11:08:35	62bd35f0-d8fc-4711-9503-d8d5c219700a	TypeError: Cannot read properties of undefined (reading 'title')
+20250928	13:55:44	b25428fb-f464-4258-8911-6b7821346b72	ReferenceError: approvedBooks is not defined
+20250928	16:09:24	17acfe38-cf7c-4159-90ab-51c17eb51d4d	ReferenceError: approvedBooks is not defined
+20250930	12:39:34	d7a63c70-bd33-40c0-a6e8-004ccf4f2098	TypeError: Cannot read properties of undefined (reading 'find')
+20250930	12:39:38	9ebd8a82-b46b-437c-a4d8-4aa5d8a0b764	TypeError: Cannot read properties of undefined (reading 'find')
+20251001	17:27:27	ee9ad633-a80a-47b5-a321-a24a34ecb925	SyntaxError: Expected double-quoted property name in JSON at position 226 (line 9 column 3)
+20251001	17:38:34	f2dde34d-e15e-46cf-ae97-95de5773f07e	ReferenceError: user is not defined
+20251001	17:38:42	dd3ebb21-7a66-4708-a7ac-91da61f7383f	ReferenceError: user is not defined
+20251001	17:38:58	1e856b54-765c-4c2d-925d-8b40eb6ab0f2	ReferenceError: user is not defined
+20251002	15:30:20	734f2af8-dce0-4b0d-b29a-b9a2fc5d4d00	ReferenceError: userId is not defined
+20251002	15:35:26	00d67bde-a2ed-4a80-bcb4-edf7ac8663d7	ReferenceError: userId is not defined
+20251002	15:35:29	39e356f2-a763-4c81-9a6f-8414ce0f1954	ReferenceError: userId is not defined
+20251002	15:37:11	b506696b-7a5b-42d9-aeee-ec9b9fcb8872	ReferenceError: userId is not defined
+20251003	15:20:01	b75f3597-27fe-4d51-b47c-a9c5cbef826f	ReferenceError: fs is not defined
+20251003	15:20:05	32b89461-3675-4970-ad09-7c868b057b90	ReferenceError: fs is not defined
+20251003	15:36:05	6107d548-49de-40ca-9c43-a9c51217d6e7	ReferenceError: fs is not defined
+20251003	15:38:44	2191831b-4848-4d1f-9632-1067a97965c1	ReferenceError: fs is not defined
+20251003	15:40:09	4c22a6c5-1910-4355-8620-4f9d2059c03f	ReferenceError: fs is not defined
+20251003	15:41:01	cab5c5d3-2f48-457c-af36-4d9740788677	ReferenceError: fs is not defined
+20251003	15:42:21	2c1e906d-275d-47fb-8604-d9ea9cb3ce68	ReferenceError: fs is not defined
+20251003	15:44:19	1e8e74fd-81f6-45b7-b1e6-8743f6c7f381	ReferenceError: fs is not defined
+20251003	15:45:22	d2aee25f-2143-43a2-b450-37cca4df8da8	ReferenceError: fs is not defined
+20251003	15:46:32	37980497-2496-4a4b-96e8-e3d17c6722d8	ReferenceError: fs is not defined
+20251003	15:50:30	ad63d287-1952-4b2e-aaf9-8ef88da2c01f	ReferenceError: fs is not defined
+20251003	15:51:39	40e71b85-61fe-41d9-93fb-fa41225084fd	ReferenceError: fs is not defined
+20251003	15:51:41	8c91e909-f2c9-4218-b928-518baf0d5a61	ReferenceError: fs is not defined
+20251003	15:51:59	a7c058fa-3f75-4aa0-828d-8b4b8dece3b7	ReferenceError: fs is not defined
+20251003	15:52:36	95b36d04-6751-4c29-b125-4164f49c610e	ReferenceError: fs is not defined
+20251003	15:54:41	75dac0e3-dbaa-4832-b5c1-0a8436a9c3f0	ReferenceError: fs is not defined
+20251003	15:55:51	20838eac-cee7-4781-b006-e0f1fe994788	ReferenceError: fs is not defined
+20251003	15:57:03	45d8a3b0-54ac-44df-aa77-bfd26a927428	ReferenceError: fs is not defined
+20251003	15:57:33	764a7f2e-84b3-4101-8272-8f1056adddee	ReferenceError: fs is not defined
+20251003	15:57:46	cb7f6847-9481-44ac-9b0b-b853cb305bef	ReferenceError: fs is not defined
+20251003	15:58:19	3a475385-596a-411d-afb1-b6183598806f	ReferenceError: fs is not defined
+20251003	16:01:19	dbb720ec-056a-492a-9602-bec3c4ceee1a	TypeError: Cannot destructure property 'bookId' of 'req.body' as it is undefined.
+20251003	16:03:47	96f82fc8-7b27-448a-b5e5-03c97008e8b5	ReferenceError: fs is not defined
+20251003	16:05:35	4947bdf0-4347-4a7d-903c-0bc86d20257b	TypeError: Cannot destructure property 'bookId' of 'req.body' as it is undefined.
+20251003	16:05:54	9c94181f-6546-46b3-8669-fe54c842c8b9	ReferenceError: fs is not defined
+20251003	16:09:38	b26edc39-7c80-4a48-9679-10a6ab142d8a	ReferenceError: fs is not defined
+20251003	16:10:07	bc8dd94a-f7d5-4789-86db-b650e6b1b1e1	ReferenceError: fs is not defined
+20251003	16:10:21	f97d92b9-5a75-4394-a5df-ea7434528de4	ReferenceError: fs is not defined
+20251003	16:16:31	4d570783-6a9d-4aac-a438-e79bc20ebf86	ReferenceError: fs is not defined
+20251003	16:22:33	1ff9d515-7d3e-4758-ba0d-7e0a4ccdd8bb	ReferenceError: fs is not defined
+20251003	16:25:41	7073581e-47f8-44bf-8e0c-902171e5ff3f	ReferenceError: fs is not defined
+20251003	16:25:50	ae4ead28-9ca5-42ea-9f09-4170b973241d	ReferenceError: fs is not defined
+20251003	16:33:13	9bfd9d66-a984-4be2-a0d5-e906e9dda302	ReferenceError: fs is not defined
+20251003	16:51:33	a5fcd407-b0b6-4a2a-9f70-2a2c53ec1e65	ReferenceError: fs is not defined
+20251003	16:52:29	3c6d89c5-1862-4173-8348-1d360ab67d37	ReferenceError: fs is not defined
+20251003	16:53:24	eba49d19-d7f0-437d-9b55-08bab0c58440	ReferenceError: fs is not defined
+20251003	16:56:02	297968e3-6942-4f3e-bf24-d5f2f144ea04	ReferenceError: fs is not defined
+20251003	17:01:59	f2ff53e1-7617-40c6-844a-3cd666da1b53	ReferenceError: fs is not defined
+20251003	17:04:21	44b6e87d-44a5-4db8-8979-3fa0e4eba620	ReferenceError: fs is not defined
+20251003	17:07:08	6b4c2bd6-22dc-4d1d-b0b1-03dff6d5baf6	ReferenceError: fs is not defined
+20251003	17:07:40	d2fa9ede-2590-44ab-96e5-e35d4155f136	ReferenceError: fs is not defined
+20251003	17:14:32	58d2f6ec-d094-433b-a2ac-463f0647fd0a	ReferenceError: fs is not defined
+20251003	17:52:55	a5da54f2-bf09-4ba7-b9ec-d19275db0257	ReferenceError: fs is not defined
+20251003	17:53:22	23d18ff0-a978-484a-be22-a228def5a444	ReferenceError: fs is not defined
+20251003	17:54:26	a33a52f4-320b-4a52-82db-433d3599ae48	TypeError: Cannot read properties of undefined (reading 'toString')
+20251006	00:30:13	c84c33fb-6023-4efd-a141-68e7fe8d4865	TypeError: Cannot read properties of undefined (reading 'length')
+20251006	00:34:45	30d93d50-8d58-4658-9153-131d7e6a7cce	TypeError: Cannot read properties of undefined (reading 'length')
+20251006	00:38:10	e143ba4f-e641-45ae-82ad-eab7e1d2d873	TypeError: Cannot read properties of undefined (reading 'length')
+20251006	00:52:47	6e2554a7-73c1-4640-b2dd-69f874d03fa6	TypeError: Cannot read properties of undefined (reading 'length')
+20251006	00:53:00	4fece85e-65dd-42b5-9c29-966944a05f07	TypeError: Cannot read properties of undefined (reading 'length')
+20251006	00:54:08	efe69e7d-1e36-40a6-a5f5-7fc267da78c1	TypeError: Cannot read properties of undefined (reading 'length')
+20251006	01:01:17	9f187a00-1272-4cae-b6b4-ab03b070eaa3	TypeError: Cannot read properties of undefined (reading 'length')
+20251006	01:01:17	22398286-a1df-418d-a9ec-aefdab052d21	TypeError: Cannot read properties of undefined (reading 'length')
+20251006	01:05:36	60861d0c-5be4-4018-9cf5-a654a974a29f	TypeError: Cannot read properties of undefined (reading 'length')
+20251006	01:05:36	87532154-2aa8-43c6-b2f9-dfe68df43e9a	TypeError: Cannot read properties of undefined (reading 'length')
+20251006	01:05:55	289dbd92-0cb0-4e8f-9391-7fd3e877134a	TypeError: Cannot read properties of undefined (reading 'length')

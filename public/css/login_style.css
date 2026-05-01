@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #eef6fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.login-container {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  color: #333;
+  overflow: hidden;
+}
+
+.welcome-box {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.scroll-text {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  white-space: nowrap;
+  color: #333;
+  animation: slideIn 2.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 1rem;
+  background: #f8f9fa;
+  border: 1px solid #e2e8f0;
+  color: #333;
+  font-size: 1rem;
+  border-radius: 0.6rem;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.input-box input:focus {
+  border-color: #4c84ff;
+  box-shadow: 0 0 0.5rem rgba(76, 132, 255, 0.2);
+}
+
+.input-box label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: #6b7280;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+  top: -0.6rem;
+  left: 0.8rem;
+  font-size: 0.75rem;
+  background: #ffffff;
+  padding: 0 0.5rem;
+  border-radius: 0.3rem;
+  color: #4c84ff;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #4c84ff;
+  border: none;
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3b71e8;
+  box-shadow: 0 4px 12px rgba(76, 132, 255, 0.25);
+}
+
+.forgot-password {
+  display: block;
+  margin-bottom: 1.5rem;
+  text-align: right;
+  font-size: 0.9rem;
+  color: #4c84ff;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+  color: #3b71e8;
+}
+
+#message {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #ef4444;
+}
+
+.toggle-eye {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #6b7280;
+  user-select: none;
+}
+
+.toggle-eye:hover {
+  color: #333;
+}
+
+.login-container h2 {
+  color: #333;
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.4;
+  padding-right: 5px;
+  box-sizing: border-box;
+}
+
+/* Responsive sizes for scroll-text */
+@media (max-width: 1280px) {
+  .scroll-text {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 1024px) {
+  .scroll-text {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 968px) {
+  .scroll-text {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .scroll-text {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 370px) {
+  .scroll-text {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 320px) {
+  .scroll-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 300px)
+{
+  .scroll-text
+  {
+    font-size: 0.4rem; 
+  }
+}

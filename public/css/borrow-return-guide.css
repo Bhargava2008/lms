@@ -1,0 +1,78 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f9fcff;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  color: #1e293b;
+}
+.guide-header {
+  text-align: center;
+  background: #2563eb;
+  color: #fff;
+  padding: 3rem 1rem;
+}
+.guide-header h1 {
+  font-size: 3rem;
+}
+.guide-header p {
+  font-size: 1.6rem;
+  color: #e2e8f0;
+}
+.guide-content {
+  max-width: 80rem;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+.guide-content h2 {
+  font-size: 2.4rem;
+  color: #2563eb;
+  margin-top: 2rem;
+}
+.guide-content ol,
+.guide-content ul {
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.note {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  background: #e2e8f0;
+  padding: 1rem;
+  border-left: 4px solid #2563eb;
+  border-radius: 0.6rem;
+}
+.note a {
+  color: #2563eb;
+  text-decoration: none;
+}
+.note a:hover {
+  text-decoration: underline;
+}
+.guide-footer {
+  text-align: center;
+  margin: 3rem 0;
+}
+.back-link {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

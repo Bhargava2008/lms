@@ -1,0 +1,76 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f9fcff;
+    margin: 0;
+    padding: 0;
+    color: #1e293b;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.faq-header {
+    text-align: center;
+    background: #2563eb;
+    color: #fff;
+    padding: 3rem 1rem;
+}
+
+.faq-header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.faq-header p {
+    font-size: 1.6rem;
+    color: #e2e8f0;
+}
+
+.faq-container {
+    max-width: 80rem;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.faq-item {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+    font-size: 2rem;
+    color: #2563eb;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.faq-answer {
+    font-size: 1.6rem;
+    color: #475569;
+    display: none; /* Hidden by default for JS toggle */
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-footer {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.back-home {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.back-home:hover {
+    text-decoration: underline;
+}

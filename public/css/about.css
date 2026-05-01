@@ -1,0 +1,193 @@
+/* Base Settings */
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background: #f9fcff;
+    color: #333;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* Header */
+.about-header {
+    text-align: center;
+    background: #2563eb;
+    color: #fff;
+    padding: 3rem 1rem;
+}
+
+.about-header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-header p {
+    font-size: 1.8rem;
+    color: #e2e8f0;
+}
+
+/* Intro */
+.about-intro {
+    max-width: 80rem;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    color: #475569;
+}
+
+/* Accordion */
+.accordion {
+    max-width: 80rem;
+    margin: 1rem auto;
+    padding: 0 2rem;
+}
+
+.accordion-btn {
+    width: 100%;
+    background: #2563eb;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.6rem;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.accordion-btn:hover {
+    background: #1d4ed8;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: #fff;
+    padding: 0 1rem;
+    border-radius: 0 0 0.6rem 0.6rem;
+}
+
+.accordion-content ul {
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+/* Gallery */
+.campus-gallery {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.campus-gallery h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: #1e293b;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 28rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 0.8rem;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Footer */
+.about-footer {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.about-footer a {
+    text-decoration: none;
+    color: #2563eb;
+    font-size: 1.6rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.about-footer a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+/* Fade-in Animation for Sections */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-intro, .accordion {
+        padding: 0 1.5rem;
+    }
+
+    .gallery img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-header h1 {
+        font-size: 2.4rem;
+    }
+
+    .about-header p {
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>EduLibrary - Student Dashboard</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../../js/student-dashboard.js" defer></script>
+
+    <link rel="stylesheet" href="../../css/student-dashboard.css" />
+    <link rel="stylesheet" href="../../css/aichatbot.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="wrapper-for-nav-and-logo">
+          <div class="mobil-nav">
+            <button class="hamburger" id="hamburger">☰</button>
+          </div>
+          <div class="logo">📚 EduLibrary</div>
+        </div>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li>
+              <a href="#" class="nav-link active" data-view="searchBooks"
+                >Search Books</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-view="issuedBooks"
+                >My Issued Books</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-view="chatbot">AI Chatbot</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-view="fines">View Fines</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-right">
+          <div class="logout-btn">
+            <button id="logout-btn">Log Out</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li>
+          <a href="#" class="nav-link" data-view="searchBooks">Search Books</a>
+        </li>
+        <li>
+          <a href="#" class="nav-link" data-view="issuedBooks"
+            >My Issued Books</a
+          >
+        </li>
+        <li><a href="#" class="nav-link" data-view="chatbot">AI Chatbot</a></li>
+        <li><a href="#" class="nav-link" data-view="fines">View Fines</a></li>
+      </ul>
+    </div>
+
+    <main class="main-content">
+      <section id="searchBooks" class="view active">
+        <h1 id="Search-books-heading">Search Books</h1>
+        <p>Find and request books from our library collection</p>
+        <div class="search-filters">
+          <input
+            type="text"
+            placeholder="Search by title, author, ISBN, or department..."
+            id="bookSearchInput"
+          />
+        </div>
+        <div class="book-grid">
+          <!-- Books will be dynamically loaded here -->
+          <div class="loading">Loading books...</div>
+        </div>
+      </section>
+
+      <section id="issuedBooks" class="view hidden">
+        <h1>My Issued Books</h1>
+        <p>Track your borrowed books and due dates</p>
+        <div class="issued-grid">
+          <div class="issued-card due-soon">
+            <h3>Introduction to Algorithms</h3>
+            <p>by Thomas H. Cormen</p>
+            <p>Issued On: 1/15/2024</p>
+            <p>Due Date: 1/29/2024</p>
+            <p class="days-overdue">567 days overdue</p>
+          </div>
+          <div class="issued-card on-time">
+            <h3>Clean Code</h3>
+            <p>by Robert C. Martin</p>
+            <p>Issued On: 1/10/2024</p>
+            <p>Due Date: 1/24/2024</p>
+            <p class="days-overdue">572 days overdue</p>
+          </div>
+          <div class="issued-card overdue">
+            <h3>Design Patterns</h3>
+            <p>by Gang of Four</p>
+            <p>Issued On: 1/5/2024</p>
+            <p>Due Date: 1/19/2024</p>
+            <p class="days-overdue">577 days overdue</p>
+            <div class="overdue-warning">
+              This book is overdue. Please return it as soon as possible to
+              avoid additional fines.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="chatbot" class="view hidden">
+        <div class="page-body-wrapper">
+          <div class="chat-container">
+            <!-- Chat Header -->
+            <div class="chat-container-header">
+              <svg
+                width="91px"
+                height="91px"
+                viewBox="-2.4 -2.4 28.80 28.80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                transform="matrix(1, 0, 0, 1, 0, 0)"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke="#CCCCCC"
+                  stroke-width="0.048"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M8 12H8.01M12 12H12.01M16 12H16.01M21.0039 12C21.0039 16.9706 16.9745 21 12.0039 21C9.9675 21 3.00463 21 3.00463 21C3.00463 21 4.56382 17.2561 3.93982 16.0008C3.34076 14.7956 3.00391 13.4372 3.00391 12C3.00391 7.02944 7.03334 3 12.0039 3C16.9745 3 21.0039 7.02944 21.0039 12Z"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+              <h1 class="chat-header-title">AI Assistant</h1>
+            </div>
+
+            <!-- Chat Log Area -->
+            <div id="chat-log" class="chat-log">
+              <div class="message message-bot">
+                <div class="message-bubble message-bot-bubble">
+                  Hello! I'm your AI assistant powered by Groq. How can I help
+                  you today?
+                </div>
+              </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="chat-input-area">
+              <form id="chat-form" class="chat-form">
+                <input
+                  type="text"
+                  id="user-input"
+                  placeholder="Type your message..."
+                  class="user-input"
+                  autocomplete="off"
+                />
+                <button type="submit" id="send-button" class="send-button">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M10.3009 13.6949L20.102 3.89742M10.5795 14.1355L12.8019 18.5804C13.339 19.6545 13.6075 20.1916 13.9458 20.3356C14.2394 20.4606 14.575 20.4379 14.8492 20.2747C15.1651 20.0866 15.3591 19.5183 15.7472 18.3818L19.9463 6.08434C20.2845 5.09409 20.4535 4.59896 20.3378 4.27142C20.2371 3.98648 20.013 3.76234 19.7281 3.66167C19.4005 3.54595 18.9054 3.71502 17.9151 4.05315L5.61763 8.2523C4.48114 8.64037 3.91289 8.83441 3.72478 9.15032C3.56153 9.42447 3.53891 9.76007 3.66389 10.0536C3.80791 10.3919 4.34498 10.6605 5.41912 11.1975L9.86397 13.42C10.041 13.5085 10.1295 13.5527 10.2061 13.6118C10.2742 13.6643 10.3352 13.7253 10.3876 13.7933C10.4468 13.87 10.491 13.9585 10.5795 14.1355Z"
+                        stroke="#000000"
+                        stroke-width="0.9"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fines" class="view hidden">
+        <h1>Library Fines</h1>
+        <p>View and manage your overdue book fines</p>
+        <div class="fines-overview">
+          <div class="overview-card unpaid">
+            <span>💵</span>
+            <div>
+              <h3>Total Unpaid</h3>
+              <p>₹0.00</p>
+              <!-- This will be updated dynamically -->
+            </div>
+          </div>
+          <div class="overview-card active">
+            <span>⚠</span>
+            <div>
+              <h3>Active Fines</h3>
+              <p>0</p>
+              <!-- This will be updated dynamically -->
+            </div>
+          </div>
+          <div class="overview-card paid">
+            <span>✅</span>
+            <div>
+              <h3>Paid Fines</h3>
+              <p>0</p>
+              <!-- This will be updated dynamically -->
+            </div>
+          </div>
+        </div>
+        <div class="fines-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Book Title</th>
+                <th>Due Date</th>
+                <th>Days Overdue</th>
+                <th>Amount</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Fines will be dynamically loaded here -->
+              <tr>
+                <td colspan="5">Loading fines...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pay-all">
+          <p>Total amount due:</p>
+          <span class="total-amount">₹0.00</span>
+          <!-- This will be updated dynamically -->
+          <!-- You can add a pay button here when you implement payment functionality -->
+          <!-- <button class="pay-button" onclick="payAllFines()">Pay All Fines</button> -->
+        </div>
+      </section>
+
+      <section id="profile" class="view hidden">
+        <h1>Profile Management</h1>
+        <p>Manage your personal information and account settings</p>
+
+        <div class="profile-picture">
+          <div class="avatar">JD</div>
+          <button class="change-pic">Change Picture</button>
+          <p>JPG, PNG or GIF. Max size of 5MB.</p>
+        </div>
+
+        <form class="profile-form">
+          <div class="names">
+            <div>
+              <label>First Name</label>
+              <input type="text" value="John" />
+            </div>
+            <div>
+              <label>Last Name</label>
+              <input type="text" value="Doe" />
+            </div>
+          </div>
+          <div>
+            <label>Student ID</label>
+            <input type="text" value="CS2024001" disabled />
+          </div>
+          <div>
+            <label>Email Address</label>
+            <input type="email" value="john.doe@university.edu" />
+          </div>
+          <div>
+            <label>Phone Number</label>
+            <input type="tel" value="+1 (555) 123-4567" />
+          </div>
+          <div>
+            <label>Department</label>
+            <input type="text" value="Computer Science" disabled />
+          </div>
+          <div>
+            <label>Address</label>
+            <input type="text" value="123 University Ave, Campus City" />
+          </div>
+        </form>
+      </section>
+
+      <section id="reminders" class="view hidden">
+        <h1>Reminders & Notifications</h1>
+        <p>Stay updated with your library activities</p>
+        <div class="notifications-overview">
+          <div class="overview-card urgent">
+            <span>⚠</span>
+            <div>
+              <h3>Urgent</h3>
+              <p>1</p>
+            </div>
+          </div>
+          <div class="overview-card high">
+            <span>⏰</span>
+            <div>
+              <h3>High Priority</h3>
+              <p>1</p>
+            </div>
+          </div>
+          <div class="overview-card total">
+            <span>🔔</span>
+            <div>
+              <h3>Total Notifications</h3>
+              <p>3</p>
+            </div>
+          </div>
+        </div>
+        <div class="notifications-list">
+          <div class="notification-item high">
+            <h3>Book Due Tomorrow</h3>
+            <p>
+              Introduction to Computer Science is due tomorrow (Jan 25, 2024)
+            </p>
+            <p class="date">1/24/2024</p>
+          </div>
+          <div class="notification-item urgent">
+            <h3>Overdue Book</h3>
+            <p>Modern Physics is 2 days overdue. Please return immediately.</p>
+            <p class="date">1/24/2024</p>
+          </div>
+          <div class="notification-item medium">
+            <h3>Book Request Approved</h3>
+            <p>
+              Your request for "Database Systems" has been approved. Please
+              collect from the library.
+            </p>
+            <p class="date">1/23/2024</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- This javaScrit logic is only for the AI chatbot -->
+    <script>
+      // AI Chatbot functionality
+      document.addEventListener("DOMContentLoaded", () => {
+        const chatForm = document.getElementById("chat-form");
+        const userInput = document.getElementById("user-input");
+        const chatLog = document.getElementById("chat-log");
+        const sendButton = document.getElementById("send-button");
+
+        // Use relative URL to avoid port conflicts
+        const backendUrl = "/chat";
+
+        /**
+         * Scrolls the chat log to the bottom.
+         */
+        function scrollToBottom() {
+          chatLog.scrollTop = chatLog.scrollHeight;
+        }
+
+        /**
+         * Adds a message bubble to the chat log.
+         * @param {string} content - The message text.
+         * @param {string} sender - 'user' or 'bot'.
+         */
+        /**
+         * Adds a message bubble to the chat log with markdown support.
+         * @param {string} content - The message text.
+         * @param {string} sender - 'user' or 'bot'.
+         */
+        function addMessage(content, sender) {
+          const messageDiv = document.createElement("div");
+          messageDiv.className = `message message-${sender}`;
+
+          const bubbleDiv = document.createElement("div");
+          bubbleDiv.className = `message-bubble message-${sender}-bubble`;
+
+          // Enhanced markdown rendering
+          let formattedContent = content
+            // Code blocks with syntax highlighting
+            .replace(
+              /```(\w+)?\n([\s\S]*?)```/g,
+              '<pre class="code-block"><code class="language-$1">$2</code></pre>'
+            )
+            // Inline code
+            .replace(/`([^`]+)`/g, '<code class="inline-code">$1</code>')
+            // Bold text
+            .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+            // Italic text
+            .replace(/\*(.*?)\*/g, "<em>$1</em>")
+            // Headers (## Header)
+            .replace(/^### (.*$)/gim, "<h3>$1</h3>")
+            .replace(/^## (.*$)/gim, "<h2>$1</h2>")
+            // Bullet points
+            .replace(/^- (.*$)/gim, "<li>$1</li>")
+            // Line breaks
+            .replace(/\n/g, "<br>");
+
+          // Wrap list items in ul if we have any
+          if (formattedContent.includes("<li>")) {
+            formattedContent = formattedContent.replace(
+              /(<li>.*<\/li>)/s,
+              "<ul>$1</ul>"
+            );
+          }
+
+          bubbleDiv.innerHTML = formattedContent;
+          messageDiv.appendChild(bubbleDiv);
+          chatLog.appendChild(messageDiv);
+          scrollToBottom();
+          return bubbleDiv;
+        }
+
+        /**
+         * Displays the loading animation in the chat log.
+         * @returns {HTMLElement} The loading message element.
+         */
+        function showLoading() {
+          const messageDiv = document.createElement("div");
+          messageDiv.className = "message message-bot";
+          messageDiv.id = "loading-indicator";
+
+          const bubbleDiv = document.createElement("div");
+          bubbleDiv.className = "message-bubble message-bot-bubble";
+          bubbleDiv.innerHTML = `
+        <span style="font-weight: 500; margin-right: 8px;">AI is thinking</span>
+        <span class="loading-dot"></span>
+        <span class="loading-dot"></span>
+        <span class="loading-dot"></span>
+      `;
+
+          messageDiv.appendChild(bubbleDiv);
+          chatLog.appendChild(messageDiv);
+          scrollToBottom();
+          return messageDiv;
+        }
+
+        /**
+         * Removes the loading animation.
+         */
+        function hideLoading() {
+          const loadingIndicator = document.getElementById("loading-indicator");
+          if (loadingIndicator) {
+            loadingIndicator.remove();
+          }
+        }
+
+        /**
+         * Handles the form submission and API call.
+         */
+        async function sendMessage(event) {
+          event.preventDefault();
+
+          const message = userInput.value.trim();
+          if (message === "") return;
+
+          // Debug info
+          console.log("🔍 Sending message to:", backendUrl);
+          console.log("Message:", message);
+
+          // 1. Display user message
+          addMessage(message, "user");
+
+          // 2. Clear input and disable elements
+          userInput.value = "";
+          userInput.disabled = true;
+          sendButton.disabled = true;
+
+          // 3. Show loading indicator
+          showLoading();
+
+          try {
+            // 4. Send message to backend
+            const response = await fetch(backendUrl, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ prompt: message }),
+            });
+
+            console.log("Response status:", response.status);
+            console.log("Response ok:", response.ok);
+
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const data = await response.json();
+            console.log("Response data:", data);
+
+            // 5. Display bot message and hide loading
+            hideLoading();
+
+            if (data.error) {
+              addMessage(`Error: ${data.error}`, "bot");
+            } else {
+              addMessage(data.response, "bot");
+            }
+          } catch (error) {
+            console.error("Error sending message:", error);
+            hideLoading();
+            addMessage(
+              "Sorry, I'm having trouble connecting to the AI service. Please check if the server is running.",
+              "bot"
+            );
+          } finally {
+            // 6. Re-enable input and button
+            userInput.disabled = false;
+            sendButton.disabled = false;
+            userInput.focus();
+          }
+        }
+
+        // Attach event listener to the form
+        if (chatForm) {
+          chatForm.addEventListener("submit", sendMessage);
+        }
+
+        // Initial scroll to bottom
+        scrollToBottom();
+      });
+    </script>
+  </body>
+</html>
